@@ -1,5 +1,7 @@
 <html>
+<title>第5次作业 2020.4.8</title>
 <body>
-<h2>Hello World2!</h2>
+<button onclick="window.location.href='student.jsp'">student</button>
+<button onclick="window.location.href='teacher.jsp'">teacher</button>
 </body>
 </html>

@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="StudentService" class="com.example.Service.StudentService">
+    <!--<bean id="StudentService" class="com.example.Service.StudentService">
         <property name="student_name" value="Hello Spring"/>
+    </bean>-->
+    <bean id="TestBean" class="com.example.bean.TestBean">
+        <property name="student_id" value="12345678"/>
+        <property name="student_name" value="name"/>
+        <property name="grade" value="2019"/>
     </bean>
+
+    <bean id="Student" class="com.example.bean.Student">
+        <property name="student_id" value="12345678"/>
+        <property name="student_name" value="name"/>
+        <property name="grade" value="2019"/>
+    </bean>
+    <context:component-scan base-package="com.example.bean"/>
+    <context:component-scan base-package="com.example.Service"/>
 </beans>
