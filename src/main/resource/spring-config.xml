@@ -19,6 +19,8 @@
         <property name="student_name" value="name"/>
         <property name="grade" value="2019"/>
     </bean>
+
+
     <context:component-scan base-package="com.example.bean"/>
     <context:component-scan base-package="com.example.Service"/>
 </beans>
